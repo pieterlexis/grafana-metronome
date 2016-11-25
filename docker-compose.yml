@@ -24,7 +24,6 @@ services:
       - "18003:8000"
     volumes:
       - graphiteapi:/src/graphite
-      - ./graphite-api/metronome:/usr/local/lib/python2.7/dist-packages/metronome
       # To allow updates without rebuilds
       - ./graphite-api/graphite-api.yaml:/etc/graphite-api.yaml
     networks:
